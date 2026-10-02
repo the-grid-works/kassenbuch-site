@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Kassenblatt</title>
+<meta name="description" content="Support für Kassenblatt: Kontakt und häufige Fragen.">
+<style>
+  :root {
+    --ground: #f7f9f2;
+    --panel: #ffffff;
+    --text: #1f2b1f;
+    --muted: #4b5a4b;
+    --accent: #2f7d32;
+    --on-accent: #ffffff;
+    --border: #d5dccb;
+    --link: #1f5f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #121a14;
+      --panel: #1b261d;
+      --text: #eef3e6;
+      --muted: #b9c4b3;
+      --accent: #6fcf73;
+      --on-accent: #0c1a0e;
+      --border: #2f3d31;
+      --link: #9ee89f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ground);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  dt { font-weight: 700; margin-top: 14px; }
+  dd { margin: 4px 0 0; color: var(--text); }
+  nav.back { margin: 0 0 20px; }
+  .contact-box {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--on-accent);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  section.lang-en {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border);
+  }
+  footer { margin-top: 32px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="back"><a href="index.html">&larr; Kassenblatt</a></nav>
+
+  <header>
+    <span class="badge">Support</span>
+    <h1>Support für Kassenblatt</h1>
+  </header>
+
+  <main>
+    <div class="panel">
+      <h2>Kontakt</h2>
+      <p>Bei Fragen, Problemen oder Vorschlägen schreiben Sie uns direkt:</p>
+      <p><a class="contact-box" href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+    </div>
+
+    <div class="panel">
+      <h2>Häufige Fragen</h2>
+      <dl>
+        <dt>Kann ich eine gespeicherte Buchung ändern oder löschen?</dt>
+        <dd>Nein. Gespeicherte Buchungen sind unveränderbar. Für eine Korrektur legen Sie eine Storno-Buchung mit Grund an; die ursprüngliche Buchung bleibt sichtbar und wird als storniert markiert.</dd>
+
+        <dt>Was ist im kostenlosen Teil enthalten?</dt>
+        <dd>Der laufende Monat, jede Buchung, Storno, der Heute-Bildschirm und der Kassensturz, ohne Einschränkung.</dd>
+
+        <dt>Was schaltet Kassenblatt Pro frei?</dt>
+        <dd>Den vollen Verlauf über den laufenden Monat hinaus, PDF- und CSV-Export, die Verfahrensdokumentation, die Sicherung sowie die Jahresauswertung. Einmalig 9,99&nbsp;€, kein Abo.</dd>
+
+        <dt>Wo werden meine Daten gespeichert?</dt>
+        <dd>Ausschließlich auf Ihrem Gerät. Es gibt keine Cloud und keinen Server. Details in der <a href="privacy.html">Datenschutzerklärung</a>.</dd>
+
+        <dt>Wie sichere ich meine Daten?</dt>
+        <dd>Über "Sicherung" in den Einstellungen (Pro) exportieren Sie eine Sicherungsdatei, die Sie selbst aufbewahren und an Ihre Steuerberatung weitergeben können. Die gesetzlich vorgeschriebene Aufbewahrung Ihrer Unterlagen stellen Sie sicher, indem Sie die exportierten Dateien für die geltende Frist aufbewahren.</dd>
+
+        <dt>Gibt es die App für iPhone und Android?</dt>
+        <dd>Derzeit für Android. Den Link finden Sie auf der <a href="get.html">App-holen-Seite</a>.</dd>
+
+        <dt>Bietet Kassenblatt eine Steuer- oder Rechtsberatung?</dt>
+        <dd>Nein. Kassenblatt führt Ihre Aufzeichnungen; für die Kassenführung und die Einhaltung der geltenden Vorschriften bleiben Sie selbst verantwortlich. Fragen Sie im Zweifel Ihre Steuerberatung.</dd>
+      </dl>
+    </div>
+  </main>
+
+  <section class="lang-en" lang="en">
+    <h2>English</h2>
+    <div class="panel">
+      <p>For questions, problems, or suggestions, write to us directly:</p>
+      <p><a class="contact-box" href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+    </div>
+    <div class="panel">
+      <dl>
+        <dt>Can I edit or delete a saved entry?</dt>
+        <dd>No. Saved entries can never be changed. For a correction, add a reversal entry with a reason; the original stays visible and is marked as reversed.</dd>
+        <dt>What does the free version include?</dt>
+        <dd>The current month, every entry, reversals, the Today screen, and the cash count, with no limit.</dd>
+        <dt>What does Kassenblatt Pro unlock?</dt>
+        <dd>Full history beyond the current month, PDF and CSV export, the procedure document, backup, and the yearly report. One-time 9.99&nbsp;EUR, no subscription.</dd>
+        <dt>Where is my data stored?</dt>
+        <dd>Only on your device. There is no cloud and no server. See the <a href="privacy.html">privacy page</a>.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="index.html">Kassenblatt</a> &middot; <a href="privacy.html">Datenschutz / Privacy</a> &middot; <a href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

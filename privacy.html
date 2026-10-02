@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz: Kassenblatt</title>
+<meta name="description" content="Datenschutzerklärung für Kassenblatt: keine Datenerhebung, alles bleibt auf dem Gerät.">
+<style>
+  :root {
+    --ground: #f7f9f2;
+    --panel: #ffffff;
+    --text: #1f2b1f;
+    --muted: #4b5a4b;
+    --accent: #2f7d32;
+    --on-accent: #ffffff;
+    --border: #d5dccb;
+    --link: #1f5f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #121a14;
+      --panel: #1b261d;
+      --text: #eef3e6;
+      --muted: #b9c4b3;
+      --accent: #6fcf73;
+      --on-accent: #0c1a0e;
+      --border: #2f3d31;
+      --link: #9ee89f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ground);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 20px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  nav.back { margin: 0 0 20px; }
+  section.lang-en {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border);
+  }
+  footer { margin-top: 32px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="back"><a href="index.html">&larr; Kassenblatt</a></nav>
+
+  <header>
+    <span class="badge">Datenschutz</span>
+    <h1>Datenschutzerklärung: Kassenblatt</h1>
+    <p class="updated">Stand: 29.09.2026</p>
+  </header>
+
+  <main>
+    <div class="panel">
+      <h2>Was gespeichert wird</h2>
+      <p>Kassenblatt speichert Ihre Buchungen, Einstellungen und Tagesabschlüsse ausschließlich im lokalen Speicher Ihres Geräts (App-Speicher bzw. den von Ihrem Betriebssystem bereitgestellten sicheren Speicherbereich). Es gibt keine Cloud-Synchronisierung und keinen Server, mit dem die App spricht.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Was nicht erhoben wird</h2>
+      <p>Kassenblatt erhebt keine personenbezogenen Daten, führt kein Konto, zeigt keine Werbung und enthält kein Tracking und keine Analyse-Software. Die App stellt keine Netzwerkverbindungen her, mit Ausnahme des Kaufvorgangs, der vollständig vom App Store bzw. Google Play abgewickelt wird (siehe unten).</p>
+    </div>
+
+    <div class="panel">
+      <h2>Kauf (Kassenblatt Pro)</h2>
+      <p>Der einmalige Kauf von Kassenblatt Pro wird vollständig über Apple App Store bzw. Google Play abgewickelt. Zahlungsdaten werden ausschließlich vom jeweiligen Store verarbeitet; Kassenblatt selbst erhält und speichert keine Zahlungsinformationen.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Löschen Ihrer Daten</h2>
+      <p>Das Deinstallieren der App entfernt alle auf dem Gerät gespeicherten Buchungen und Einstellungen. Eine von Ihnen selbst erstellte Sicherungsdatei (Export) liegt außerhalb der App und unterliegt allein Ihrer eigenen Kontrolle; Sie können sie jederzeit selbst löschen, wo immer Sie sie gespeichert haben.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Kontakt</h2>
+      <p>Bei Fragen zum Datenschutz: <a href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+    </div>
+  </main>
+
+  <section class="lang-en" lang="en">
+    <h2>English</h2>
+    <div class="panel">
+      <p><strong>What is stored.</strong> Every entry, setting, and daily close stays only in the app's own local storage on your device. There is no cloud sync and no server the app talks to.</p>
+    </div>
+    <div class="panel">
+      <p><strong>What is not collected.</strong> Kassenblatt collects no personal data, has no account, shows no ads, and includes no tracking or analytics. The app makes no network connections except the purchase flow, which is handled entirely by the App Store or Google Play.</p>
+    </div>
+    <div class="panel">
+      <p><strong>Purchases.</strong> The one-time Kassenblatt Pro purchase is processed entirely by Apple's App Store or Google Play. Kassenblatt itself never receives or stores payment information.</p>
+    </div>
+    <div class="panel">
+      <p><strong>Deleting your data.</strong> Uninstalling the app removes every entry and setting stored on the device. A backup file you export yourself lives outside the app and is entirely under your own control; you can delete it yourself wherever you saved it.</p>
+    </div>
+    <div class="panel">
+      <p><strong>Contact.</strong> <a href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="index.html">Kassenblatt</a> &middot; <a href="support.html">Support</a> &middot; <a href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

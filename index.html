@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kassenblatt: Kassenbuch für die offene Ladenkasse</title>
+<meta name="description" content="Kassenblatt ist ein offline geführtes Kassenbuch für Marktstand, Imbiss und kleinen Laden. Kein Konto, keine Werbung, einmal gekauft.">
+<style>
+  :root {
+    --ground: #f7f9f2;
+    --panel: #ffffff;
+    --text: #1f2b1f;
+    --muted: #4b5a4b;
+    --accent: #2f7d32;
+    --on-accent: #ffffff;
+    --border: #d5dccb;
+    --link: #1f5f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #121a14;
+      --panel: #1b261d;
+      --text: #eef3e6;
+      --muted: #b9c4b3;
+      --accent: #6fcf73;
+      --on-accent: #0c1a0e;
+      --border: #2f3d31;
+      --link: #9ee89f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ground);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+  }
+  header.hero {
+    padding: 28px 0 8px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 6px;
+    line-height: 1.25;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 20px;
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .panel h2 {
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+  }
+  ul.features {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  ul.features li { margin: 6px 0; }
+  .price-line {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  nav.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin: 22px 0 8px;
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.links a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+  section.lang-en {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border);
+  }
+  section.lang-en h2 { font-size: 1.3rem; }
+  footer {
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--link); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">Kein Konto &middot; Offline &middot; Einmal gekauft</span>
+    <h1>Kassenblatt</h1>
+    <p class="tagline">Ihr Kassenbuch für die offene Ladenkasse: Marktstand, Imbiss oder kleiner Laden.</p>
+  </header>
+
+  <nav class="links" aria-label="Seiten">
+    <a href="get.html">App holen</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Datenschutz</a>
+    <a href="mailto:sales@syntheticm2m.com">Kontakt</a>
+  </nav>
+
+  <main>
+    <div class="panel">
+      <h2>Was Kassenblatt macht</h2>
+      <ul class="features">
+        <li>Buchung erfassen: Einnahme oder Ausgabe, Ziffernblock, USt 0/7/19&nbsp;%, Kategorie, automatische Beleg-Nr.</li>
+        <li>Nie ändern, nur stornieren: eine gespeicherte Buchung bleibt unverändert, Korrekturen laufen über eine Storno-Buchung mit Grund.</li>
+        <li>Jede Buchung ist mit einem Prüfwert an die vorherige gekettet, nachträgliche Änderungen an gespeicherten Daten werden erkannt.</li>
+        <li>Heute: Anfangsbestand, Einnahmen, Ausgaben, Sollbestand in Echtzeit.</li>
+        <li>Kassensturz: Scheine und Münzen zählen, Differenz zum Sollbestand wird mit dem Tagesabschluss gespeichert.</li>
+        <li>Auswertung nach Kategorie und USt-Satz, für Monat oder Jahr.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Kostenlos und Pro</h2>
+      <p>Kostenlos: der laufende Monat, jede Buchung, Storno, Heute und Kassensturz.</p>
+      <p>Pro schaltet frei: voller Verlauf, PDF- und CSV-Export, Verfahrensdokumentation, Sicherung und Jahresauswertung.</p>
+      <p class="price-line">Einmalig 9,99&nbsp;€, kein Abo.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Verantwortung</h2>
+      <p>Kassenblatt führt Ihre Aufzeichnungen. Für die ordnungsgemäße Kassenführung und die Einhaltung der für Sie geltenden Vorschriften bleiben Sie selbst verantwortlich. Die App gibt keine Steuer- oder Rechtsberatung; sprechen Sie Details mit Ihrer Steuerberatung ab.</p>
+    </div>
+  </main>
+
+  <section class="lang-en" lang="en">
+    <h2>English</h2>
+    <div class="panel">
+      <p>Kassenblatt is an offline cash book for an open cash register: a market stall, food stand or small shop. Entries can never be edited, only reversed with a reason. Every entry is chained to the one before it so later changes to stored data can be detected. A daily cash count compares the counted cash with the expected balance.</p>
+      <p>Free: the current month, every entry, reversals, Today and cash count. Pro (one-time 9.99&nbsp;EUR, no subscription) unlocks full history, PDF and CSV export, the procedure document, backup and the yearly report.</p>
+      <p>No account, no ads, no tracking, no analytics. Nothing leaves the device unless you export or share a file yourself.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Kassenblatt &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Datenschutz / Privacy</a> &middot; <a href="mailto:sales@syntheticm2m.com">sales@syntheticm2m.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
